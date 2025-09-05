@@ -1,0 +1,32 @@
+div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    height: 100%;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    margin-right: 100px;
+}
+
+a:hover {
+    transition: all 0.3s ease-in-out;
+    color: #3F51B5;
+    opacity: 0.5;
+}
+
+a {
+    text-decoration: none;
+    color: #E0E0E0;
+    font-weight: bold;
+}
+
+img {
+    width: 30px;
+    cursor: pointer;
+}
+
