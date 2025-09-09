@@ -14,7 +14,7 @@ footer {
 
 .main-content {
   z-index: 1;
-  height: calc(100vh - 53px);
+  height: calc(100vh - 50px);
   overflow-y: scroll;
 }
 /* Estiliza a barra de rolagem */
