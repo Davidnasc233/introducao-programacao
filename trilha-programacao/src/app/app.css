@@ -12,6 +12,16 @@ footer {
     background-color: #121212;
 }
 
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #252525;
+  width: 100%;
+  gap: 50px;
+  height: 900px;
+}
+
 .main-content {
   z-index: 1;
   height: calc(100vh - 50px);
