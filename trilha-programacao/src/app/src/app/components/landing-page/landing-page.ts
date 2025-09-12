@@ -15,22 +15,19 @@ export class LandingPage {
     'assets/szabo-viktor-z1aLTzG2VGU-unsplash.jpg'
   ];
 
-  currentIndex = 0;
+  currentIndex: number = 0;
 
   nextSlide() {
     this.currentIndex = (this.currentIndex + 1) % this.images.length;
-    this.updateSlidePosition();
   }
 
   prevSlide() {
-    this.currentIndex =
-      (this.currentIndex - 1 + this.images.length) % this.images.length;
-    this.updateSlidePosition();
+    this.currentIndex = (this.currentIndex - 1 + this.images.length) % this.images.length;
   }
-
-  updateSlidePosition() {
-    const slide = document.querySelector('.carousel-slide') as HTMLElement;
-    slide.style.transform = `translateX(-${this.currentIndex * 100}%)`;
+  ngOnInit() {
+    setInterval(() => {
+      this.nextSlide();
+    }, 10000); // Muda a cada 3 segundos
   }
 }
 

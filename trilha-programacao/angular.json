@@ -25,7 +25,9 @@
             ],
             "styles": [
               "src/styles.css",
-              "phosphor-icons/src/css/icons.css"
+              "phosphor-icons/src/css/icons.css",
+              "bootstrap/dist/css/bootstrap.min.css"
+
             ]
           },
           "configurations": {
